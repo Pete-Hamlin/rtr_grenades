@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>9bf84ed3-78e4-49ee-be7d-568a655d129a</Guid>
+    <Name>RTR_Grenades</Name>
+    <Description>Description of My XCOM 2 Mod.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>RTR_Grenades</AssemblyName>
+    <RootNamespace>RTR_Grenades</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Content\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\RTR_Grenades\" />
+    <Folder Include="Src\RTR_Grenades\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComGameData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComRTRGrenades.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComWeaponData.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\Grenade_Pack.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\RTR_Grenades\Classes\GrenadeHook.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\RTR_Grenades\Classes\X2Item_RTREquipment.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\RTR_Grenades\Classes\X2Ability_ThrowSmoke.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\RTR_Grenades\Classes\X2DownloadableContentInfo_RTR_Grenades.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
